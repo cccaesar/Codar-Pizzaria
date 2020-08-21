@@ -17,10 +17,8 @@ export class LoginComponent implements OnInit {
     }
 
   loginf(email, senha){
-    let preenchido = this.verificarCampos(email,senha);
-    if(preenchido){
-      
-    }
+    let preenchido: Boolean = this.verificarCampos(email,senha);
+
   }
 
   
