@@ -18,7 +18,9 @@ export class LoginComponent implements OnInit {
 
   loginf(email, senha){
     let preenchido: Boolean = this.verificarCampos(email,senha);
-
+    if(preenchido){
+      location.assign("http://localhost:4200/home");
+    }
   }
 
   
