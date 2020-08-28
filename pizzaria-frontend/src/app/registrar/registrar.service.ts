@@ -22,6 +22,7 @@ export class RegistrarService {
       alert("A senha não foi confirmada");
       return false;
     }
+    return true;
   }
 
   constructor() { }

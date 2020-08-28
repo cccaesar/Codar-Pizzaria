@@ -17,7 +17,10 @@ export class RegistrarComponent implements OnInit {
 
 
   registrarf(nome, email, senha, senha2){
-    this.verificarCampos(nome, email, senha, senha2);
+    let preenchido:boolean = this.verificarCampos(nome, email, senha, senha2);
+    if (preenchido){
+      location.assign("http://localhost:4200");
+    }
   }
 
   
