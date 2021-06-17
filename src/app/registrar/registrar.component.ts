@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 import { RegistrarService } from './registrar.service';
 
@@ -11,13 +12,19 @@ export class RegistrarComponent implements OnInit {
   
   public verificarCampos;
 
-  constructor(public registrarService: RegistrarService) { 
+  constructor(public registrarService: RegistrarService, private router: Router) { 
     this.verificarCampos = registrarService.verificarPreenchimento
   }
 
 
   registrarf(nome, email, senha, senha2){
-    this.verificarCampos(nome, email, senha, senha2);
+    const preenchido: Boolean = this.verificarCampos(nome, email, senha, senha2);
+    if( preenchido )
+    {
+      this.router.navigate(['/']);
+      console.log("AAAAAA");
+    }
+
   }
 
   

@@ -1,0 +1,10 @@
+<h1>Codar Pizzaria</h1>
+<h3>Pegue uma fatia</h3>
+<h4>Cadastrar-se</h4>
+<form>
+    <input type="text" #nome placeholder="Nome Completo"><br>
+    <input type="email" #email placeholder="E-mail"><br>
+    <input type="password" #senha placeholder="Senha"><br>
+    <input type="password"#senha2 placeholder="Confirme a senha"><br>
+</form>
+<button (click)="registrarf(nome.value, email.value, senha.value, senha2.value)" >Registrar-se</button>
