@@ -6,8 +6,8 @@ import { ModuleWithProviders } from '@angular/core';
 import { RegistrarComponent } from '../registrar/registrar.component'
 
 const APP_ROUTES: Routes = [
-    {path: 'home', component: HomeComponent },
-    {path: '', component: LoginComponent },
+    {path: '', component: HomeComponent },
+    {path: 'login', component: LoginComponent },
     {path: 'registrar', component: RegistrarComponent }
 
 ];

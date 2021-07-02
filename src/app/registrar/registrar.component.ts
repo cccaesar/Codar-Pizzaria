@@ -22,7 +22,6 @@ export class RegistrarComponent implements OnInit {
     if( preenchido )
     {
       this.router.navigate(['/']);
-      console.log("AAAAAA");
     }
 
   }
